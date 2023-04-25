@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✴ Social-Book</title>
+    <link rel="stylesheet" href="style.css">
+
+     <!------- below code from fontawesome ----------->
+    <script src="https://kit.fontawesome.com/3a316dfda6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- nav-bar session -->
+
+<nav>
+    <div class="nav-left">
+        <img src="images/socialbook.png"  class="logo">
+
+        <ul>
+            <li><img src="images/notification.png"></li>
+            <li><img src="images/mailbox4.png"></li>
+            <li><img src="images/video.png"></li>
+        </ul>
+    </div>
+
+    <div class="nav-right">
+
+       <div class="search-box">
+        <img src="images/search.png">
+        <input type="text" placeholder="search">
+       </div>
+
+       <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+        <img src="images/profile-pic.jpg" alt="">
+       </div>
+    </div>
+       
+    <!-- settings-menu----------->
+    <div class="settings-menu">
+
+        <div id="dark-btn">
+            <span></span>
+        </div>
+
+
+         <div class="settings-menu-inner">
+            <div class="user-profile">
+              <img src="images/user-B.png" alt="">
+             <div>
+                <p>Goodnews Nwayen</p>
+                <a href="#">see your profile</a>
+             </div>
+          </div>
+
+          <hr>
+
+          <div class="user-profile">
+              <img src="images/feedback.png" alt="">
+              <div>
+                <p>Give Feedback</p>
+                <a href="#">Help us to improve the new design</a>
+              </div>
+          </div>
+          <hr>
+            
+          <!-- settings-links -->
+          
+          <div class="settings-links">
+            <img src="images/setting.png" class="settings-icon" alt="">
+            <a href="#">settings & privacy
+            <img src="images/right-arrow.png" width="10px" alt=""></a>
+          </div>
+
+          <div class="settings-links">
+            <img src="images/help.png" class="settings-icon" alt="">
+            <a href="#">Help & Support
+            <img src="images/right-arrow.png" width="10px" alt=""></a>
+          </div>
+              
+          <div class="settings-links">
+            <img src="images/display.png" class="settings-icon" alt="">
+            <a href="#">Display and Accessibility
+            <img src="images/right-arrow.png" width="10px" alt=""></a>
+          </div> 
+
+          <div class="settings-links">
+            <img src="images/logout.png" class="settings-icon" alt="">
+            <a href="#">logout
+            <img src="images/right-arrow.png" width="10px" alt=""></a>
+          </div>
+
+
+
+         </div>
+
+        
+    </div>
+</nav>
+   
+<!-- container session ------------->
+
+<div class="container">
+    <!-----------left-sidebar----------->
+    <div class="left-sidebar">
+         <div class="imp-link">
+            <a href="#"><img src="images/latest-news2.png" alt="">Latest News</a>
+            <a href="#"><img src="images/Friends-icon.png" alt="">Friends</a>
+            <a href="#"><img src="images/Group-icon3.png" alt="">Group</a>
+            <a href="#"><img src="images/cart-icon.png" alt="">Marketplace</a>
+            <a href="#"><img src="images/watch-icon.png" alt="">Watch</a>
+            <a href="#">See More</a>
+         </div>
+
+           <!------ shortcut-links on left-sidebar --------->
+
+         <div class="shortcut-links">
+            <p>Your Shortcuts</p>
+            <a href="#"><img src="images/shortcut-A.jpeg" alt="">Web Developers</a>
+            <a href="#"><img src="images/shortcut-2.jpeg" alt="">Web Design</a>
+            <a href="#"><img src="images/shortcut-4.jpeg" alt="">Full Stack Development</a>
+            <a href="#"><img src="images/shortcut-5.jpeg" alt="">Website Experts</a>
+            <a href="#"><img src="images/shortcut-3.jpeg" alt="">Graphics Design</a>
+        </div>
+    </div>
+
+    <!-----------main-content--------------------------->
+    <div class="main-content">
+
+        <!------ story-gallery ---------->
+
+        <div class="story-gallery">
+          <div class="story Story1">
+            <img src="images/upload-img4.png" alt="">
+            <p>Post Story</p>
+          </div>
+
+          <div class="story Story2">
+            <img src="images/user-5.png" alt="">
+            <p>Elen</p>
+          </div>
+
+          <div class="story Story3" >
+            <img src="images/user-4.png" alt="">
+            <p>Jene</p>
+          </div>
+
+          <div class="story Story4">
+            <img src="images/user-B.png" alt="">
+            <p>Benson</p>
+          </div>
+
+          <div class="story Story5">
+            <img src="images/user-2.png" alt="">
+            <p>Goodews</p>
+          </div>
+
+        </div>
+
+        <!-- writer-post-container -->
+        <div class="writer-post-container">
+
+            <div class="user-profile">
+                <img src="images/user-B.png" alt="">
+                <div>
+                    <p>Goodnews Nwayen</p>
+                    <small>Public <i class="fas fa-caret-down"></i></small>
+                </div>
+            </div>
+            
+
+            <!-- post-input-container -->
+            <div class="post-input-container">
+                <textarea rows="3" placeholder="What's on your mind, Goody?"></textarea>
+
+                <div class="add-post-links">
+                    <a href=""><img src="images/video-icon.png" alt="">Live Video</a>
+                    <a href=""><img src="images/photo-video.png" alt="">Photo/Video</a>
+                    <a href=""><img src="images/emoji-2.png" alt="">Feeling/Activity</a>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- post-container -->
+        <div class="post-container">
+         <div class="post-row">
+            <div class="user-profile">
+                <img src="images/user-B.png" alt="">
+                <div>
+                    <p>Goodnews Nwayen</p>
+                    <span>September 30 2022, 09:27pm</span>
+                </div>
+
+                <div class="user-icon">
+                    <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                </div>
+
+            </div>
+         </div>
+            
+            <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                <a href="#">#YouTubeChannel</a></p>
+                <img src="images/shortcute-G.png" class="post-img" alt="">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/thumb-up.png" alt="">120</div>
+                        <div><img src="images/chat.png" alt="">45</div>
+                        <div><img src="images/share.png" alt="">20</div>
+                    </div>
+
+                    <div class="post-profile-icon">
+                         <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+        </div>
+
+
+        <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-2.jpeg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Like and Share this video with Friends, tag <span>@Goodtechsystem Training</span>
+                 Facebook Page on Your Post, Drop Your Doubts In comments Session.
+                <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-3.jpeg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-4.jpeg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-1.jpeg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-6.jpeg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-7.jpeg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-5.jpeg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-B.png" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-C.jpeg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-D.jpeg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-E.jpeg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-F.jpeg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-G.jpg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+   
+           <div class="post-container">
+            <div class="post-row">
+               <div class="user-profile">
+                   <img src="images/user-B.png" alt="">
+                   <div>
+                       <p>Goodnews Nwayen</p>
+                       <span>September 30 2022, 09:27pm</span>
+                   </div>
+   
+                   <div class="user-icon">
+                       <a href="#"> <i class="fas fa-ellipsis-v"></i></a>
+                   </div>
+   
+               </div>
+            </div>
+               
+               <p class="post-text">Subscribe <span>@Goodtechsystem Training</span> YouTube Channel  To watch More Videos 
+                   On Website Development And UI Designs. <a href="#">#Goodtechsystem</a>
+                   <a href="#">#YouTubeChannel</a></p>
+                   <img src="images/shortcut-H.jpeg" class="post-img" alt="">
+   
+                   <div class="post-row">
+                       <div class="activity-icons">
+                           <div><img src="images/thumb-up.png" alt="">120</div>
+                           <div><img src="images/chat.png" alt="">45</div>
+                           <div><img src="images/share.png" alt="">20</div>
+                       </div>
+   
+                       <div class="post-profile-icon">
+                            <img src="images/user-B.png" alt=""> <i class="fas fa-caret-down"></i>
+                       </div>
+                   </div>
+           </div>
+              
+           <!-- button session -->
+           <button type="button" class="load-more-btn">Load More</button>
+   
+   
+   </div>
+
+    <!-----------right-sidebar----------->
+    <div class="right-sidebar">
+
+        <div class="sidebar-title">
+            <h4>Event</h4>
+            <a href="#">See All</a>
+        </div>
+            <!----- event session -------->
+        <div class="event">
+            <div class="left-event">
+                <h3>20</h3>
+                <span>September</span>
+            </div>
+
+            <div class="right-event">
+                <h4>Social Media</h4>
+                  <!---- icon from fontawesome ------>
+                <p><i class="fas fa-map-marker-alt"></i> Goodtechsystem Limited</p>
+                <a href="#">More Info</a>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="left-event">
+                <h3>22</h3>
+                <span>October</span>
+            </div>
+
+            <div class="right-event">
+                <h4>Mobile marketing</h4>
+                <!-- !---- icon from fontawesome - -->
+                <p><i class="fas fa-map-marker-alt"></i> Goodtechsystem Limited</p>
+                <a href="#">More Info</a>
+            </div>
+        </div>
+
+        <div class="sidebar-title">
+            <h4>Advertisement</h4>
+            <a href="#">Close</a>
+        </div>
+
+          <!-- Advertisement --------->
+        <img src="images/ads.jpeg" class="sidebar-ads" alt="">
+
+        <div class="sidebar-title">
+            <h4>Conversation</h4>
+            <a href="#">Hide Chat</a>
+        </div>
+
+        <div class="online-list">
+            <div class="online">
+                <img src="images/user-B.png" alt="user">
+            </div>
+            <p>Goodnews Nwayen</p>
+        </div>
+        
+        <div class="online-list">
+            <div class="online">
+                <img src="images/user-1.png" alt="user">
+            </div>
+            <p>Benson Paul</p>
+        </div>
+
+        <div class="online-list">
+            <div class="online">
+                <img src="images/user-2.png" alt="user"> 
+            </div>
+            <p>Mark Phillip</p>
+        </div>
+
+    </div>
+    
+</div>
+
+<!-- footer session -->
+
+<div class="footer">
+    <p>Copyright 2022 - By Goodtechsystem Training</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
